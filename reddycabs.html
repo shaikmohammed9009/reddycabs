@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReddyCabs - Professional Taxi Services | Book Now</title>
+    <meta name="description" content="ReddyCabs - Professional taxi services in Hyderabad. Book local rides, outstation cabs, and airport transfers. 24x7 service available.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reddycabs.css">
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Top Contact Bar -->
+    <div class="bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-3 px-4 text-sm relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 animate-shimmer"></div>
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-8 relative z-10">
+            <div class="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
+                <div class="bg-white/20 p-1 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-phone text-xs"></i>
+                </div>
+                <span class="font-semibold">+91 8106583449</span>
+            </div>
+            <div class="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
+                <div class="bg-white/20 p-1 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-envelope text-xs"></i>
+                </div>
+                <span class="font-semibold">reddycabssarvice@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
+                <div class="bg-white/20 p-1 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-clock text-xs"></i>
+                </div>
+                <span class="font-semibold">24x7 Service Available</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-gray-900/95 backdrop-blur-lg shadow-2xl sticky top-0 z-50 border-b border-red-500/20" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 group">
+                    <div class="bg-gradient-to-br from-red-500 to-red-700 p-3 rounded-xl shadow-lg group-hover:shadow-red-500/50 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3">
+                        <i class="fas fa-car text-white text-xl transform group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="group-hover:translate-x-2 transition-transform duration-300">
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">ReddyCabs</h1>
+                        <p class="text-sm text-red-400 -mt-1 font-medium">Professional Taxi Service</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#services" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Services
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#rates" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Rates
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#about" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#contact" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-300 hover:text-red-400 transition-all duration-300 transform hover:scale-110" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-800/95 backdrop-blur-lg border-t border-red-500/20 rounded-b-lg">
+                    <a href="#home" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Home</a>
+                    <a href="#services" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Services</a>
+                    <a href="#rates" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Rates</a>
+                    <a href="#about" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">About</a>
+                    <a href="#contact" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black py-20 overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-red-500/10 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-float-delayed"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-400/5 rounded-full blur-3xl animate-pulse-slow"></div>
+        </div>
+        
+        <!-- Grid Pattern Overlay -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Left Content -->
+                <div class="lg:w-1/2 mb-10 lg:mb-0 animate-slide-in-left">
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">Book Your</span>
+                        <br>
+                        <span class="bg-gradient-to-r from-red-500 via-red-400 to-red-600 bg-clip-text text-transparent animate-pulse-glow">Taxi</span>
+                        <br>
+                        <span class="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">Instantly</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up">
+                        Professional cab services in Hyderabad. Safe, reliable, and affordable rides for local trips, outstation travel, and airport transfers.
+                    </p>
+                    
+                    <!-- Call to Action -->
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-red-500/20 mb-8 card-3d animate-scale-in">
+                        <h3 class="text-3xl font-bold text-white mb-6 text-center">Need a Cab? Call Now!</h3>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="tel:+918106583449" class="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-xl font-semibold text-center hover:from-red-700 hover:to-red-800 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-red-500/50 btn-3d">
+                                <i class="fas fa-phone mr-2"></i>
+                                +91 8106583449
+                            </a>
+                            <a href="https://wa.me/918106583449" class="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl font-semibold text-center hover:from-green-700 hover:to-green-800 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50 btn-3d">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-3 gap-6 animate-fade-in-up">
+                        <div class="text-center group">
+                            <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl mb-3 mx-auto w-fit border border-red-500/30 group-hover:scale-110 transition-all duration-500 transform group-hover:rotate-3">
+                                <i class="fas fa-clock text-red-400 text-2xl group-hover:text-red-300 transition-colors duration-300"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors duration-300">24x7 Service</p>
+                        </div>
+                        <div class="text-center group">
+                            <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl mb-3 mx-auto w-fit border border-red-500/30 group-hover:scale-110 transition-all duration-500 transform group-hover:rotate-3">
+                                <i class="fas fa-shield-alt text-red-400 text-2xl group-hover:text-red-300 transition-colors duration-300"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors duration-300">Safe & Secure</p>
+                        </div>
+                        <div class="text-center group">
+                            <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl mb-3 mx-auto w-fit border border-red-500/30 group-hover:scale-110 transition-all duration-500 transform group-hover:rotate-3">
+                                <i class="fas fa-rupee-sign text-red-400 text-2xl group-hover:text-red-300 transition-colors duration-300"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors duration-300">Best Rates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - 3D Map Animation -->
+                <div class="lg:w-1/2 lg:pl-12">
+                    <div class="relative">
+                        <div class="map-animation-container">
+                            <svg width="500" height="400" viewBox="0 0 500 400" class="w-full h-auto">
+                                <!-- Map Background -->
+                                <defs>
+                                    <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+                                    </linearGradient>
+                                    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#6b7280;stop-opacity:0.8" />
+                                        <stop offset="50%" style="stop-color:#9ca3af;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#6b7280;stop-opacity:0.8" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                        <feMerge> 
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Map Base -->
+                                <rect x="0" y="0" width="500" height="400" fill="url(#mapGrad)" rx="20"/>
+                                
+                                <!-- State Boundaries (Simplified Telangana outline) -->
+                                <path d="M50 80 Q150 60 250 80 Q350 100 450 120 L450 320 Q350 340 250 320 Q150 340 50 320 Z" 
+                                      fill="#374151" stroke="#6b7280" stroke-width="2" opacity="0.6"/>
+                                
+                                <!-- Road Path from Hyderabad to Srisailam -->
+                                <path id="roadPath" d="M150 180 Q200 200 250 220 Q300 240 380 280" 
+                                      stroke="url(#roadGrad)" stroke-width="8" fill="none" opacity="0.9"/>
+                                
+                                <!-- Road Dashes Animation -->
+                                <path d="M150 180 Q200 200 250 220 Q300 240 380 280" 
+                                      stroke="#ffffff" stroke-width="2" fill="none" 
+                                      stroke-dasharray="10,5" opacity="0.6">
+                                    <animateTransform
+                                        attributeName="stroke-dashoffset"
+                                        values="0;-15;0"
+                                        dur="2s"
+                                        repeatCount="indefinite"/>
+                                </path>
+                                
+                                <!-- Hyderabad City -->
+                                <g id="hyderabad">
+                                    <circle cx="150" cy="180" r="25" fill="#dc2626" opacity="0.8" filter="url(#glow)">
+                                        <animate attributeName="r" values="25;30;25" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="150" cy="180" r="15" fill="#ffffff" opacity="0.9"/>
+                                    <text x="150" y="185" text-anchor="middle" fill="#dc2626" font-family="Arial" font-size="10" font-weight="bold">HYD</text>
+                                    <text x="150" y="210" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">Hyderabad</text>
+                                </g>
+                                
+                                <!-- Srisailam Destination -->
+                                <g id="srisailam">
+                                    <circle cx="380" cy="280" r="20" fill="#f59e0b" opacity="0.8" filter="url(#glow)">
+                                        <animate attributeName="r" values="20;25;20" dur="2.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="380" cy="280" r="12" fill="#ffffff" opacity="0.9"/>
+                                    <path d="M375 275 L385 275 L380 285 Z" fill="#f59e0b"/>
+                                    <text x="380" y="305" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">Srisailam</text>
+                                </g>
+                                
+                                <!-- Animated Car -->
+                                <g id="animatedCar">
+                                    <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+                                        <mpath href="#roadPath"/>
+                                    </animateMotion>
+                                    
+                                    <!-- Car Shadow -->
+                                    <ellipse cx="0" cy="8" rx="15" ry="5" fill="#000000" opacity="0.3"/>
+                                    
+                                    <!-- Car Body -->
+                                    <rect x="-12" y="-6" width="24" height="12" rx="3" fill="#fbbf24" stroke="#dc2626" stroke-width="1"/>
+                                    
+                                    <!-- Car Roof -->
+                                    <rect x="-8" y="-10" width="16" height="8" rx="2" fill="#fed7aa"/>
+                                    
+                                    <!-- Windows -->
+                                    <rect x="-6" y="-8" width="4" height="4" rx="1" fill="#87ceeb" opacity="0.8"/>
+                                    <rect x="-1" y="-8" width="6" height="4" rx="1" fill="#87ceeb" opacity="0.8"/>
+                                    <rect x="2" y="-8" width="4" height="4" rx="1" fill="#87ceeb" opacity="0.8"/>
+                                    
+                                    <!-- Wheels -->
+                                    <circle cx="-8" cy="4" r="3" fill="#2d3748"/>
+                                    <circle cx="8" cy="4" r="3" fill="#2d3748"/>
+                                    
+                                    <!-- Headlights -->
+                                    <circle cx="12" cy="-2" r="1.5" fill="#ffffff" opacity="0.9"/>
+                                    <circle cx="12" cy="2" r="1.5" fill="#ffffff" opacity="0.9"/>
+                                </g>
+                                
+                                <!-- Distance Indicator -->
+                                <g id="distanceInfo">
+                                    <rect x="20" y="20" width="120" height="50" rx="8" fill="#1f2937" opacity="0.9" stroke="#dc2626" stroke-width="1"/>
+                                    <text x="30" y="35" fill="#ffffff" font-family="Arial" font-size="10" font-weight="bold">Distance:</text>
+                                    <text x="30" y="48" fill="#fbbf24" font-family="Arial" font-size="12" font-weight="bold">213 KM</text>
+                                    <text x="30" y="60" fill="#9ca3af" font-family="Arial" font-size="9">Approx 4.5 hrs</text>
+                                </g>
+                                
+                                <!-- Route Highlights -->
+                                <g id="routePoints">
+                                    <!-- Intermediate Point 1 -->
+                                    <circle cx="200" cy="200" r="3" fill="#10b981" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    
+                                    <!-- Intermediate Point 2 -->
+                                    <circle cx="250" cy="220" r="3" fill="#10b981" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    
+                                    <!-- Intermediate Point 3 -->
+                                    <circle cx="300" cy="240" r="3" fill="#10b981" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="1s" repeatCount="indefinite"/>
+                                    </circle>
+                                </g>
+                                
+                                <!-- Compass -->
+                                <g id="compass" transform="translate(420, 50)">
+                                    <circle cx="0" cy="0" r="25" fill="#1f2937" opacity="0.9" stroke="#dc2626" stroke-width="2"/>
+                                    <path d="M0,-20 L5,-5 L0,0 L-5,-5 Z" fill="#dc2626"/>
+                                    <path d="M0,20 L5,5 L0,0 L-5,5 Z" fill="#6b7280"/>
+                                    <text x="0" y="-30" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="8" font-weight="bold">N</text>
+                                </g>
+                                
+                                <!-- Floating Labels -->
+                                <g id="floatingLabels">
+                                    <g opacity="0.9">
+                                        <rect x="180" y="120" width="80" height="30" rx="15" fill="#dc2626" opacity="0.1"/>
+                                        <text x="220" y="135" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="11" font-weight="bold">ReddyCabs</text>
+                                        <text x="220" y="145" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="9">Premium Route</text>
+                                        <animate attributeName="opacity" values="0.9;0.6;0.9" dur="3s" repeatCount="indefinite"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <!-- 3D Effect Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-red-500/10 to-transparent rounded-2xl pointer-events-none"></div>
+                        
+                        <!-- Route Info Card -->
+                        <div class="absolute bottom-4 left-4 bg-gray-800/90 backdrop-blur-lg p-4 rounded-xl border border-red-500/30 shadow-lg">
+                            <h4 class="text-white font-bold text-sm mb-2">🚗 Live Route Tracking</h4>
+                            <div class="flex items-center space-x-4 text-xs text-gray-300">
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                                    <span>Hyderabad</span>
+                                </div>
+                                <div class="text-gray-500">→</div>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+                                    <span>Srisailam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Why Choose ReddyCabs?</h2>
+                <p class="text-xl text-gray-300">Experience the difference with our professional service</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group animate-slide-in-left">
+                    <div class="bg-gradient-to-br from-red-500 to-red-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 feature-icon shadow-lg shadow-red-500/50 group-hover:shadow-red-500/80 transition-all duration-500">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-red-300 transition-colors duration-300">24x7 Service</h3>
+                    <p class="text-gray-300 leading-relaxed">Round-the-clock availability for all your taxi needs</p>
+                </div>
+
+                <div class="text-center group animate-slide-in-up">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 feature-icon shadow-lg shadow-blue-500/50 group-hover:shadow-blue-500/80 transition-all duration-500">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">Safe & Secure</h3>
+                    <p class="text-gray-300 leading-relaxed">Verified drivers and GPS tracking for your safety</p>
+                </div>
+
+                <div class="text-center group animate-slide-in-up delay-200">
+                    <div class="bg-gradient-to-br from-green-500 to-green-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 feature-icon shadow-lg shadow-green-500/50 group-hover:shadow-green-500/80 transition-all duration-500">
+                        <i class="fas fa-rupee-sign text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-green-300 transition-colors duration-300">Best Rates</h3>
+                    <p class="text-gray-300 leading-relaxed">Competitive pricing with no hidden charges</p>
+                </div>
+
+                <div class="text-center group animate-slide-in-right">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 feature-icon shadow-lg shadow-purple-500/50 group-hover:shadow-purple-500/80 transition-all duration-500">
+                        <i class="fas fa-user-tie text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">Professional Drivers</h3>
+                    <p class="text-gray-300 leading-relaxed">Experienced and courteous drivers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900 text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Get In Touch</h2>
+                <p class="text-xl text-gray-300">Ready to book your ride? Contact us now!</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Contact Info -->
+                <div class="animate-slide-in-left">
+                    <div class="space-y-8">
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-red-500 to-red-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-red-500/50 group-hover:shadow-red-500/80 transition-all duration-500">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Phone</h3>
+                                <p class="text-gray-300 text-lg">+91 8106583449</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/50 group-hover:shadow-blue-500/80 transition-all duration-500">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Email</h3>
+                                <p class="text-gray-300 text-lg">reddycabssarvice@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-green-500 to-green-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-green-500/50 group-hover:shadow-green-500/80 transition-all duration-500">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Service Area</h3>
+                                <p class="text-gray-300 text-lg">Hyderabad and surrounding areas</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/50 group-hover:shadow-purple-500/80 transition-all duration-500">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">WhatsApp</h3>
+                                <p class="text-gray-300 text-lg">+91 8106583449</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="bg-gray-800/50 backdrop-blur-lg p-10 rounded-2xl border border-red-500/20 card-3d animate-slide-in-right">
+                    <h3 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Book Your Ride Now</h3>
+                    <div class="space-y-6">
+                        <a href="tel:+918106583449" class="block w-full bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-4 rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-500 text-lg font-semibold btn-3d">
+                            <i class="fas fa-phone mr-3"></i>
+                            Call +91 8106583449
+                        </a>
+                        <a href="https://wa.me/918106583449" class="block w-full bg-gradient-to-r from-green-600 to-green-700 text-white text-center py-4 rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-500 text-lg font-semibold btn-3d">
+                            <i class="fab fa-whatsapp mr-3"></i>
+                            WhatsApp Us
+                        </a>
+                        <a href="mailto:reddycabssarvice@gmail.com" class="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-500 text-lg font-semibold btn-3d">
+                            <i class="fas fa-envelope mr-3"></i>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black text-white py-16 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="animate-fade-in-up">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-gradient-to-br from-red-500 to-red-700 p-3 rounded-xl shadow-lg shadow-red-500/50">
+                            <i class="fas fa-car text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">ReddyCabs</h3>
+                            <p class="text-sm text-gray-400">Professional Taxi Service</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Your trusted partner for safe, reliable, and comfortable taxi services in Hyderabad.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate-fade-in-up delay-100">
+                    <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+                            Home
+                        </a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+                            Services
+                        </a></li>
+                        <li><a href="#rates" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+                            Rates
+                        </a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+                            About
+                        </a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+                            Contact
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="animate-fade-in-up delay-200">
+                    <h4 class="text-xl font-bold mb-6 text-white">Our Services</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-car text-red-500 mr-3"></i>
+                            Local Taxi Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-route text-blue-500 mr-3"></i>
+                            Outstation Cabs
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-green-500 mr-3"></i>
+                            24x7 Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-briefcase text-yellow-500 mr-3"></i>
+                            Corporate Bookings
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-city text-purple-500 mr-3"></i>
+                            City Tours
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="animate-fade-in-up delay-300">
+                    <h4 class="text-xl font-bold mb-6 text-white">Contact Info</h4>
+                    <div class="space-y-4 text-gray-400">
+                        <div class="flex items-center space-x-3 group">
+                            <div class="bg-gradient-to-br from-red-500 to-red-700 p-2 rounded-lg shadow-lg shadow-red-500/50 group-hover:shadow-red-500/80 transition-all duration-300">
+                                <i class="fas fa-phone text-white text-sm"></i>
+                            </div>
+                            <span class="group-hover:text-red-400 transition-colors duration-300">+91 8106583449</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-700 p-2 rounded-lg shadow-lg shadow-blue-500/50 group-hover:shadow-blue-500/80 transition-all duration-300">
+                                <i class="fas fa-envelope text-white text-sm"></i>
+                            </div>
+                            <span class="group-hover:text-blue-400 transition-colors duration-300">reddycabssarvice@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="bg-gradient-to-br from-green-500 to-green-700 p-2 rounded-lg shadow-lg shadow-green-500/50 group-hover:shadow-green-500/80 transition-all duration-300">
+                                <i class="fas fa-map-marker-alt text-white text-sm"></i>
+                            </div>
+                            <span class="group-hover:text-green-400 transition-colors duration-300">Hyderabad, Telangana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p class="text-lg">&copy; 2025 <span class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent font-bold">ReddyCabs</span>. All rights reserved. | Professional Taxi Services in Hyderabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <!-- Call Button (Left Side) -->
+    <a href="tel:+918106583449" class="fixed left-4 bottom-24 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50 animate-bounce">
+        <i class="fas fa-phone text-xl"></i>
+    </a>
+
+    <!-- WhatsApp Button (Right Side) -->
+    <a href="https://wa.me/918106583449" target="_blank" class="fixed right-4 bottom-24 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50 animate-bounce">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
+
+    <script src="reddycabs.js"></script>
+</body>
+</html>
