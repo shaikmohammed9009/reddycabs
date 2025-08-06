@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReddyCabs - Professional Taxi Services | Book Now</title>
+    <meta name="description" content="ReddyCabs - Professional taxi services in Hyderabad. Book local rides, outstation cabs, and airport transfers. 24x7 service available.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reddycabs.css">
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Top Contact Bar -->
+    <div class="bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-3 px-4 text-sm relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 animate-shimmer"></div>
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-8 relative z-10">
+            <div class="flex items-center space-x-2">
+                <div class="bg-white/20 p-1 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-phone text-xs"></i>
+                </div>
+                <span class="font-semibold">+91 8106583449</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="bg-white/20 p-1 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-envelope text-xs"></i>
+                </div>
+                <span class="font-semibold">reddycabssarvice@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="bg-white/20 p-1 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-clock text-xs"></i>
+                </div>
+                <span class="font-semibold">24x7 Service Available</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-gray-900/95 backdrop-blur-lg shadow-2xl sticky top-0 z-50 border-b border-red-500/20" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 group">
+                    <div class="bg-gradient-to-br from-red-500 to-red-700 p-3 rounded-xl shadow-lg">
+                        <i class="fas fa-car text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">ReddyCabs</h1>
+                        <p class="text-sm text-red-400 -mt-1 font-medium">Professional Taxi Service</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#taxi-services" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Services
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#rates" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Rates
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#why-choose-us" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#contact" class="text-gray-300 hover:text-red-400 transition-all duration-300 relative group font-medium">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center space-x-3">
+                    <button class="text-gray-300 hover:text-red-400 transition-all duration-300" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-800/95 backdrop-blur-lg border-t border-red-500/20 rounded-b-lg">
+                    <a href="#home" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Home</a>
+                    <a href="#taxi-services" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Services</a>
+                    <a href="#rates" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Rates</a>
+                    <a href="#why-choose-us" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">About</a>
+                    <a href="#contact" class="block px-3 py-3 text-gray-300 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black py-20 overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-red-500/10 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-float-delayed"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-400/5 rounded-full blur-3xl animate-pulse-slow"></div>
+        </div>
+        
+        <!-- Grid Pattern Overlay -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Left Content -->
+                <div class="lg:w-1/2 mb-10 lg:mb-0 animate-slide-in-left">
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">Book Your</span>
+                        <br>
+                        <span class="bg-gradient-to-r from-red-500 via-red-400 to-red-600 bg-clip-text text-transparent animate-pulse-glow">Taxi</span>
+                        <br>
+                        <span class="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">Instantly</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up">
+                        Professional cab services in Hyderabad. Safe, reliable, and affordable rides for local trips, outstation travel, and airport transfers.
+                    </p>
+                    
+                    <!-- Call to Action -->
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-red-500/20 mb-8 animate-scale-in">
+                        <h3 class="text-3xl font-bold text-white mb-6 text-center">Need a Cab? Call Now!</h3>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="tel:+918106583449" class="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-xl font-semibold text-center hover:from-red-700 hover:to-red-800 transition-all duration-500">
+                                <i class="fas fa-phone mr-2"></i>
+                                +91 8106583449
+                            </a>
+                            <a href="https://wa.me/918106583449" class="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl font-semibold text-center hover:from-green-700 hover:to-green-800 transition-all duration-500">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-3 gap-6 animate-fade-in-up">
+                        <div class="text-center group">
+                            <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl mb-3 mx-auto w-fit border border-red-500/30">
+                                <i class="fas fa-clock text-red-400 text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-300">24x7 Service</p>
+                        </div>
+                        <div class="text-center group">
+                            <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl mb-3 mx-auto w-fit border border-red-500/30">
+                                <i class="fas fa-shield-alt text-red-400 text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-300">Safe & Secure</p>
+                        </div>
+                        <div class="text-center group">
+                            <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl mb-3 mx-auto w-fit border border-red-500/30">
+                                <i class="fas fa-rupee-sign text-red-400 text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-300">Best Rates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - 3D Map Animation -->
+                <div class="lg:w-1/2 lg:pl-12">
+                    <div class="relative">
+                        <div class="map-animation-container">
+                            <svg width="500" height="400" viewBox="0 0 500 400" class="w-full h-auto">
+                                <!-- Map Background -->
+                                <defs>
+                                    <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+                                    </linearGradient>
+                                    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#6b7280;stop-opacity:0.8" />
+                                        <stop offset="50%" style="stop-color:#9ca3af;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#6b7280;stop-opacity:0.8" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                        <feMerge> 
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Map Base -->
+                                <rect x="0" y="0" width="500" height="400" fill="url(#mapGrad)" rx="20"/>
+                                
+                                <!-- State Boundaries (Simplified Telangana outline) -->
+                                <path d="M50 80 Q150 60 250 80 Q350 100 450 120 L450 320 Q350 340 250 320 Q150 340 50 320 Z" 
+                                      fill="#374151" stroke="#6b7280" stroke-width="2" opacity="0.6"/>
+                                
+                                <!-- Road Path from Hyderabad to Srisailam -->
+                                <path id="roadPath" d="M150 180 Q200 200 250 220 Q300 240 380 280" 
+                                      stroke="url(#roadGrad)" stroke-width="8" fill="none" opacity="0.9"/>
+                                
+                                <!-- Road Dashes Animation -->
+                                <path d="M150 180 Q200 200 250 220 Q300 240 380 280" 
+                                      stroke="#ffffff" stroke-width="2" fill="none" 
+                                      stroke-dasharray="10,5" opacity="0.6">
+                                    <animateTransform
+                                        attributeName="stroke-dashoffset"
+                                        values="0;-15;0"
+                                        dur="2s"
+                                        repeatCount="indefinite"/>
+                                </path>
+                                
+                                <!-- Hyderabad City -->
+                                <g id="hyderabad">
+                                    <circle cx="150" cy="180" r="25" fill="#dc2626" opacity="0.8" filter="url(#glow)">
+                                        <animate attributeName="r" values="25;30;25" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="150" cy="180" r="15" fill="#ffffff" opacity="0.9"/>
+                                    <!-- Charminar Image -->
+                                    <image x="140" y="170" width="20" height="20" href="images/lord-mallikarjuna/charminar.jpg" opacity="0.9" style="border-radius: 50%;"/>
+                                    <text x="150" y="210" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">Hyderabad</text>
+                                </g>
+                                
+                                <!-- Srisailam Destination -->
+                                <g id="srisailam">
+                                    <circle cx="380" cy="280" r="20" fill="#f59e0b" opacity="0.8" filter="url(#glow)">
+                                        <animate attributeName="r" values="20;25;20" dur="2.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="380" cy="280" r="12" fill="#ffffff" opacity="0.9"/>
+                                    <!-- Srisailam Temple Image -->
+                                    <image x="372" y="272" width="16" height="16" href="images/lord-mallikarjuna/images_2.jpg" opacity="0.9" style="border-radius: 50%;"/>
+                                    <text x="380" y="305" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">Srisailam</text>
+                                </g>
+                                
+                                <!-- Animated Car -->
+                                <g id="animatedCar">
+                                    <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+                                        <mpath href="#roadPath"/>
+                                    </animateMotion>
+                                    
+                                    <!-- Car Shadow -->
+                                    <ellipse cx="0" cy="8" rx="15" ry="5" fill="#000000" opacity="0.3"/>
+                                    
+                                    <!-- Car Body -->
+                                    <rect x="-12" y="-6" width="24" height="12" rx="3" fill="#fbbf24" stroke="#dc2626" stroke-width="1"/>
+                                    
+                                    <!-- Car Roof -->
+                                    <rect x="-8" y="-10" width="16" height="8" rx="2" fill="#fed7aa"/>
+                                    
+                                    <!-- Windows -->
+                                    <rect x="-6" y="-8" width="4" height="4" rx="1" fill="#87ceeb" opacity="0.8"/>
+                                    <rect x="-1" y="-8" width="6" height="4" rx="1" fill="#87ceeb" opacity="0.8"/>
+                                    <rect x="2" y="-8" width="4" height="4" rx="1" fill="#87ceeb" opacity="0.8"/>
+                                    
+                                    <!-- Wheels -->
+                                    <circle cx="-8" cy="4" r="3" fill="#2d3748"/>
+                                    <circle cx="8" cy="4" r="3" fill="#2d3748"/>
+                                    
+                                    <!-- Headlights -->
+                                    <circle cx="12" cy="-2" r="1.5" fill="#ffffff" opacity="0.9"/>
+                                    <circle cx="12" cy="2" r="1.5" fill="#ffffff" opacity="0.9"/>
+                                </g>
+                                
+                                <!-- Distance Indicator -->
+                                <g id="distanceInfo">
+                                    <rect x="20" y="20" width="120" height="50" rx="8" fill="#1f2937" opacity="0.9" stroke="#dc2626" stroke-width="1"/>
+                                    <text x="30" y="35" fill="#ffffff" font-family="Arial" font-size="10" font-weight="bold">Distance:</text>
+                                    <text x="30" y="48" fill="#fbbf24" font-family="Arial" font-size="12" font-weight="bold">213 KM</text>
+                                    <text x="30" y="60" fill="#9ca3af" font-family="Arial" font-size="9">Approx 4.5 hrs</text>
+                                </g>
+                                
+                                <!-- Route Highlights -->
+                                <g id="routePoints">
+                                    <!-- Intermediate Point 1 -->
+                                    <circle cx="200" cy="200" r="3" fill="#10b981" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    
+                                    <!-- Intermediate Point 2 -->
+                                    <circle cx="250" cy="220" r="3" fill="#10b981" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    
+                                    <!-- Intermediate Point 3 -->
+                                    <circle cx="300" cy="240" r="3" fill="#10b981" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="1s" repeatCount="indefinite"/>
+                                    </circle>
+                                </g>
+                                
+                                <!-- Compass -->
+                                <g id="compass" transform="translate(420, 50)">
+                                    <circle cx="0" cy="0" r="25" fill="#1f2937" opacity="0.9" stroke="#dc2626" stroke-width="2"/>
+                                    <path d="M0,-20 L5,-5 L0,0 L-5,-5 Z" fill="#dc2626"/>
+                                    <path d="M0,20 L5,5 L0,0 L-5,5 Z" fill="#6b7280"/>
+                                    <text x="0" y="-30" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="8" font-weight="bold">N</text>
+                                </g>
+                                
+                                <!-- Floating Labels -->
+                                <g id="floatingLabels">
+                                    <g opacity="0.9">
+                                        <rect x="180" y="120" width="80" height="30" rx="15" fill="#dc2626" opacity="0.1"/>
+                                        <text x="220" y="135" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="11" font-weight="bold">ReddyCabs</text>
+                                        <text x="220" y="145" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="9">Premium Route</text>
+                                        <animate attributeName="opacity" values="0.9;0.6;0.9" dur="3s" repeatCount="indefinite"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <!-- 3D Effect Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-red-500/10 to-transparent rounded-2xl pointer-events-none"></div>
+                        
+                        <!-- Route Info Card -->
+                        <div class="absolute bottom-4 left-4 bg-gray-800/90 backdrop-blur-lg p-4 rounded-xl border border-red-500/30 shadow-lg">
+                            <h4 class="text-white font-bold text-sm mb-2">🚗 Live Route Tracking</h4>
+                            <div class="flex items-center space-x-4 text-xs text-gray-300">
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                                    <span>Hyderabad</span>
+                                </div>
+                                <div class="text-gray-500">→</div>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+                                    <span>Srisailam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sakshi Ganapati Section -->
+    <section id="sakshiganapati" class="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Sakshi Ganapati - Divine Witness</h2>
+                <p class="text-xl text-gray-300">The Sacred Witness of All Divine Activities at Srisailam</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Sakshi Ganapati Image -->
+                <div class="animate-slide-in-left">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
+                        <div class="relative bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-orange-500/30">
+                            <img src="images/lord-mallikarjuna/sakshi_ganpati.jpg" 
+                                 alt="Sakshi Ganapati - Divine Witness at Srisailam" 
+                                 class="w-full h-96 object-cover rounded-xl shadow-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-xl font-bold mb-1">🐘 श्री साक्षी गणपति</h3>
+                                <p class="text-sm text-orange-300">Divine Witness</p>
+                                <p class="text-xs text-red-300">Observer of Sacred Rituals</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Temple Image -->
+                    <div class="mt-6 relative group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-600/20 rounded-2xl blur-xl"></div>
+                        <div class="relative bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-red-500/30">
+                            <img src="images/lord-mallikarjuna//sakshi_ganpati_temple.jpg" 
+                                 alt="Sakshi Ganapati Temple - Sacred Architecture" 
+                                 class="w-full h-64 object-cover rounded-xl shadow-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-lg font-bold mb-1">🏛️ साक्षी गणपति मंदिर</h3>
+                                <p class="text-sm text-red-300">Sacred Temple Architecture</p>
+                                <p class="text-xs text-orange-300">Divine Witness Chamber</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sakshi Ganapati Information -->
+                <div class="animate-slide-in-right">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-orange-500/20">
+                        <h3 class="text-3xl font-bold text-white mb-6 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+                            श्री साक्षी गणपति - Divine Witness
+                        </h3>
+                        
+                        <div class="space-y-6 text-gray-300 leading-relaxed">
+                            <div class="bg-gradient-to-r from-orange-500/20 to-red-600/20 p-6 rounded-xl border border-orange-500/30">
+                                <h4 class="text-orange-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-eye mr-2"></i>
+                                    The Divine Witness
+                                </h4>
+                                <p class="text-sm">
+                                    <span class="text-red-300 font-semibold">Sakshi Ganapati</span>, literally meaning "Witness Ganesha," holds a unique and sacred position in Hindu temple traditions, particularly at Srisailam. As the divine witness, Lord Ganesha observes and sanctifies all religious ceremonies, prayers, and devotional activities within the temple complex.
+                                </p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-4 rounded-xl border border-orange-500/20">
+                                    <h4 class="text-orange-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-certificate mr-2"></i>
+                                        Sacred Validation
+                                    </h4>
+                                    <p class="text-sm">In Hindu tradition, Sakshi Ganapati is invoked as the celestial witness to all sacred vows, marriages, and important life ceremonies.</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-br from-red-500/10 to-orange-600/10 p-4 rounded-xl border border-red-500/20">
+                                    <h4 class="text-red-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-hands-praying mr-2"></i>
+                                        Divine Approval
+                                    </h4>
+                                    <p class="text-sm">His presence ensures that all spiritual activities are conducted with divine approval and blessing from the cosmic realm.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-orange-500/10 to-red-600/10 p-6 rounded-xl border border-orange-500/20">
+                                <h4 class="text-white font-bold mb-3 flex items-center">
+                                    <i class="fas fa-temple mr-2 text-orange-400"></i>
+                                    Significance at Srisailam Temple
+                                </h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-orange-400"></i> <strong>Eternal Witness:</strong> Observes the divine union of Lord Mallikarjuna and Goddess Bhramaramba</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-red-400"></i> <strong>Marriage Blessings:</strong> Essential witness for couples seeking sanctification of marital unions</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-yellow-400"></i> <strong>Pilgrimage Completion:</strong> Darshan ensures complete and blessed pilgrimage experience</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-purple-400"></i> <strong>Cosmic Record:</strong> Records all devotion in the celestial realm</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-green-400"></i> <strong>Spiritual Validation:</strong> Validates all sincere devotional practices</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-red-500/10 to-orange-600/10 p-6 rounded-xl border border-red-500/20">
+                                <h4 class="text-red-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-heart mr-2"></i>
+                                    Spiritual Experience & Powers
+                                </h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-orange-300 font-semibold mb-1">Obstacle Removal</p>
+                                        <p class="text-xs">As lord of beginnings, removes all spiritual barriers</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-red-300 font-semibold mb-1">Divine Witness</p>
+                                        <p class="text-xs">Cosmic consciousness observing all devotion</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-yellow-300 font-semibold mb-1">Sacred Validation</p>
+                                        <p class="text-xs">Makes every prayer spiritually potent</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-purple-300 font-semibold mb-1">Transformative Experience</p>
+                                        <p class="text-xs">Deep spiritual presence and validation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center bg-gradient-to-r from-orange-500/20 to-red-600/20 p-4 rounded-xl">
+                                <p class="text-orange-300 font-semibold italic text-lg">
+                                    "गणपति बप्पा मोरया! Experience divine witness and validation at Sacred Srisailam"
+                                </p>
+                                <p class="text-red-300 text-sm mt-2">
+                                    Let Sakshi Ganapati bless and witness your spiritual journey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milkarjuna Swamy Temple Section -->
+    <section id="srisailam-temple" class="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Srisailam - Mallikarjuna Swamy Temple</h2>
+                <p class="text-xl text-gray-300">Experience the divine journey to one of India's most sacred Jyotirlingas</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-yellow-500 to-orange-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Lord Mallikarjuna Swamy Image -->
+                <div class="animate-slide-in-left">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-orange-600/20 rounded-2xl blur-xl"></div>
+                        <div class="relative bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-yellow-500/30">
+                            <img src="images/lord-mallikarjuna/malikarjuna_img_1.png" 
+                                 alt="Lord Mallikarjuna Swamy - Sacred Jyotirlinga" 
+                                 class="w-full h-96 object-cover rounded-xl shadow-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-xl font-bold mb-1">🕉️ श्री मल्लिकार्जुन स्वामी</h3>
+                                <p class="text-sm text-yellow-300">Lord Shiva as Mallikarjuna</p>
+                                <p class="text-xs text-orange-300">Sacred Jyotirlinga Form</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Lord Images Grid -->
+                    <div class="space-y-6 mt-6">
+                        <div class="relative group">
+                            <div class="bg-gray-800/40 backdrop-blur-lg p-4 rounded-xl border border-yellow-500/20">
+                                <img src="images/lord-mallikarjuna/images_2.jpg" 
+                                     alt="Srisailam Temple" 
+                                     class="w-full h-64 object-cover rounded-lg">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+                                <div class="absolute bottom-4 left-4 text-white">
+                                    <p class="text-sm font-semibold">Srisailam Temple</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <div class="bg-gray-800/40 backdrop-blur-lg p-4 rounded-xl border border-orange-500/20">
+                                <img src="images/lord-mallikarjuna/vas1822slsrisailamallikarjuna-1.webp" 
+                                     alt="Silver Malikarjuna Swamy" 
+                                     class="w-full h-64 object-cover rounded-lg">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+                                <div class="absolute bottom-4 left-4 text-white">
+                                    <p class="text-sm font-semibold">Silver Malikarjuna Swamy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Temple History & Information -->
+                <div class="animate-slide-in-right">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-yellow-500/20">
+                        <h3 class="text-3xl font-bold text-white mb-6 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                            श्री मल्लिकार्जुन स्वामी - Divine History
+                        </h3>
+                        
+                        <div class="space-y-6 text-gray-300 leading-relaxed">
+                            <div class="bg-gradient-to-r from-yellow-500/20 to-orange-600/20 p-6 rounded-xl border border-yellow-500/30">
+                                <h4 class="text-yellow-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-om mr-2"></i>
+                                    Divine Origin Story
+                                </h4>
+                                <p class="text-sm">
+                                    <span class="text-orange-300 font-semibold">Lord Mallikarjuna Swamy</span> manifested when Lord Shiva and Goddess Parvati took the forms of Mallikarjuna and Bhramaramba respectively. According to legend, when their sons Ganesha and Kartikeya competed to marry first, Ganesha won by circumambulating his parents. Hurt by this, Kartikeya went to Krauncha mountain. To console him, Shiva and Parvati appeared as Mallikarjuna and Bhramaramba at Srisailam.
+                                </p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bg-gradient-to-br from-yellow-500/10 to-orange-600/10 p-4 rounded-xl border border-yellow-500/20">
+                                    <h4 class="text-yellow-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-scroll mr-2"></i>
+                                        Ancient Scriptures
+                                    </h4>
+                                    <p class="text-sm">The glory of Lord Mallikarjuna is extensively described in Skanda Purana, Linga Purana, and Shiva Purana. The temple finds mention in Mahabharata as one of the most sacred pilgrimage sites.</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-4 rounded-xl border border-orange-500/20">
+                                    <h4 class="text-orange-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-crown mr-2"></i>
+                                        Royal Patronage
+                                    </h4>
+                                    <p class="text-sm">Historical records show patronage from Satavahanas, Ikshvakus, Pallavas, Cholas, Kakatiyas, and Vijayanagara rulers. Krishna Deva Raya made significant contributions to the temple.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-yellow-500/10 to-orange-600/10 p-6 rounded-xl border border-yellow-500/20">
+                                <h4 class="text-white font-bold mb-3 flex items-center">
+                                    <i class="fas fa-star-and-crescent mr-2 text-yellow-400"></i>
+                                    Sacred Significance of Lord Mallikarjuna
+                                </h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-yellow-400"></i> <strong>Jyotirlinga:</strong> One of 12 self-manifested Shiva lingas representing infinite light</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-orange-400"></i> <strong>Dual Deity:</strong> Both Shiva (Mallikarjuna) and Shakti (Bhramaramba) reside here</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-red-400"></i> <strong>Moksha Giver:</strong> Believed that darshan here grants liberation from cycle of birth-death</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-purple-400"></i> <strong>Kailash of South:</strong> Known as "Dakshina Kailasam" - Southern abode of Lord Shiva</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-green-400"></i> <strong>Miraculous Powers:</strong> Devotees believe prayers here fulfill desires and cure ailments</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-purple-500/10 to-pink-600/10 p-6 rounded-xl border border-purple-500/20">
+                                <h4 class="text-purple-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-calendar-alt mr-2"></i>
+                                    Sacred Festivals & Rituals
+                                </h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-yellow-300 font-semibold mb-1">Maha Shivaratri</p>
+                                        <p class="text-xs">Grand celebration lasting for days with special abhishekams</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-orange-300 font-semibold mb-1">Brahmotsavam</p>
+                                        <p class="text-xs">Annual festival during Chaitra month (March-April)</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-green-300 font-semibold mb-1">Kartika Purnima</p>
+                                        <p class="text-xs">Lakhs of devotees take holy dip in Krishna river</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-blue-300 font-semibold mb-1">Dussehra</p>
+                                        <p class="text-xs">Special celebrations with cultural programs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center bg-gradient-to-r from-yellow-500/20 to-orange-600/20 p-4 rounded-xl">
+                                <p class="text-yellow-300 font-semibold italic text-lg">
+                                    "हर हर महादेव! Let ReddyCabs take you on this sacred journey to receive blessings of Lord Mallikarjuna Swamy"
+                                </p>
+                                <p class="text-orange-300 text-sm mt-2">
+                                    Experience divine bliss at the holiest Jyotirlinga in South India
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Bhramaramba Devi Section -->
+    <section id="bhramaramba" class="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Sri Bhramaramba Devi - Divine Mother</h2>
+                <p class="text-xl text-gray-300">The Better Half of Lord Mallikarjuna - Mother of Three Worlds</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Bhramaramba Devi Image -->
+                <div class="animate-slide-in-left">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-2xl blur-xl"></div>
+                        <div class="relative bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-pink-500/30">
+                            <img src="images/lord-mallikarjuna/bramramikadevi.jpg" 
+                                 alt="Sri Bhramaramba Devi - Divine Mother" 
+                                 class="w-full h-96 object-cover rounded-xl shadow-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-xl font-bold mb-1">🌸 श्री भ्रामरी देवी</h3>
+                                <p class="text-sm text-pink-300">Mother of Three Worlds</p>
+                                <p class="text-xs text-purple-300">Divine Shakti at Srisailam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Temple Image -->
+                    <div class="mt-6 relative group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-600/20 rounded-2xl blur-xl"></div>
+                        <div class="relative bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-purple-500/30">
+                            <img src="images/lord-mallikarjuna/temple_bramramika.jpg" 
+                                 alt="Bhramaramba Devi Temple - Sacred Architecture" 
+                                 class="w-full h-64 object-cover rounded-xl shadow-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-lg font-bold mb-1">🏛️ भ्रामरी देवी मंदिर</h3>
+                                <p class="text-sm text-purple-300">Sacred Temple Architecture</p>
+                                <p class="text-xs text-pink-300">Western Side of Main Temple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bhramaramba Devi Information -->
+                <div class="animate-slide-in-right">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-pink-500/20">
+                        <h3 class="text-3xl font-bold text-white mb-6 bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
+                            श्री भ्रामरी देवी - Divine History
+                        </h3>
+                        
+                        <div class="space-y-6 text-gray-300 leading-relaxed">
+                            <div class="bg-gradient-to-r from-pink-500/20 to-purple-600/20 p-6 rounded-xl border border-pink-500/30">
+                                <h4 class="text-pink-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-lotus mr-2"></i>
+                                    Divine Manifestation
+                                </h4>
+                                <p class="text-sm">
+                                    <span class="text-purple-300 font-semibold">Bhramaramba Devi</span> is the divine consort of Lord Mallikarjuna at Srisailam. She manifested herself to console Lord Kartikeya when he went to Krauncha mountain. As the better half of Lord Shiva, she took the form of Bhramaramba to reside alongside Mallikarjuna at this sacred Shakti Peetha.
+                                </p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bg-gradient-to-br from-pink-500/10 to-purple-600/10 p-4 rounded-xl border border-pink-500/20">
+                                    <h4 class="text-pink-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-crown mr-2"></i>
+                                        Shakti Peetha
+                                    </h4>
+                                    <p class="text-sm">Srisailam is one of the most important among the 18 Shakti Peethas, where the goddess's throat is believed to have fallen, making it supremely sacred.</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-br from-purple-500/10 to-pink-600/10 p-4 rounded-xl border border-purple-500/20">
+                                    <h4 class="text-purple-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-music mr-2"></i>
+                                        Bhramari Vidya
+                                    </h4>
+                                    <p class="text-sm">The goddess is the epicenter of Naada Vidya (sound knowledge) and Bhramari Vidya, where devotees can hear divine sounds by placing their ears at her temple's backside.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-pink-500/10 to-purple-600/10 p-6 rounded-xl border border-pink-500/20">
+                                <h4 class="text-white font-bold mb-3 flex items-center">
+                                    <i class="fas fa-star mr-2 text-pink-400"></i>
+                                    Sacred Significance of Bhramaramba Devi
+                                </h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-pink-400"></i> <strong>Mother of Three Worlds:</strong> Protector and nurturer of all three realms</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-purple-400"></i> <strong>Wish Fulfiller:</strong> No deity matches her power to grant devotees' desires</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-red-400"></i> <strong>Divine Blessings:</strong> Grants long life, success, health, prosperity and children</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-yellow-400"></i> <strong>Knowledge Giver:</strong> Source of all Vedas and divine wisdom</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-green-400"></i> <strong>Fear Destroyer:</strong> Destroys enemies, fears and grants protection</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-purple-500/10 to-pink-600/10 p-6 rounded-xl border border-purple-500/20">
+                                <h4 class="text-purple-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-praying-hands mr-2"></i>
+                                    Divine Blessings & Powers
+                                </h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-pink-300 font-semibold mb-1">Aayur Vardhanam</p>
+                                        <p class="text-xs">Grants long life and good health</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-purple-300 font-semibold mb-1">Sowbhagya Pradaayini</p>
+                                        <p class="text-xs">Bestows good fortune and prosperity</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-blue-300 font-semibold mb-1">Putra Vivardhanam</p>
+                                        <p class="text-xs">Blesses with children and family happiness</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-green-300 font-semibold mb-1">Sarva Siddhi Pradaayini</p>
+                                        <p class="text-xs">Grants all spiritual and material achievements</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center bg-gradient-to-r from-pink-500/20 to-purple-600/20 p-4 rounded-xl">
+                                <p class="text-pink-300 font-semibold italic text-lg">
+                                    "श्री भ्रामरी देवी की जय! Experience the divine grace of Mother Bhramaramba at Srisailam"
+                                </p>
+                                <p class="text-purple-300 text-sm mt-2">
+                                    Receive blessings from the most compassionate Divine Mother
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Srisailam Dam Section -->
+    <section id="srisailam-dam" class="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Srisailam Dam - Engineering Marvel</h2>
+                <p class="text-xl text-gray-300">Magnificent Hydroelectric Wonder on Krishna River</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Srisailam Dam Image -->
+                <div class="animate-slide-in-left">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-600/20 rounded-2xl blur-xl"></div>
+                        <div class="relative bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-blue-500/30">
+                            <img src="images/lord-mallikarjuna/dam.jpg" 
+                                 alt="Srisailam Dam - Hydroelectric Wonder" 
+                                 class="w-full h-96 object-cover rounded-xl shadow-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-xl font-bold mb-1">🌊 श्रीशैलम बांध</h3>
+                                <p class="text-sm text-blue-300">Krishna River Dam</p>
+                                <p class="text-xs text-cyan-300">Hydroelectric Power Station</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dam Statistics Card -->
+                    <div class="mt-6 bg-gray-800/50 backdrop-blur-lg p-6 rounded-2xl border border-blue-500/20">
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                            <i class="fas fa-chart-bar mr-2 text-blue-400"></i>
+                            Dam Specifications
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gradient-to-br from-blue-500/10 to-cyan-600/10 p-4 rounded-xl border border-blue-500/20">
+                                <div class="text-center">
+                                    <i class="fas fa-ruler-horizontal text-blue-400 text-2xl mb-2"></i>
+                                    <p class="text-blue-300 font-semibold">Length</p>
+                                    <p class="text-white text-lg font-bold">512 meters</p>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 p-4 rounded-xl border border-cyan-500/20">
+                                <div class="text-center">
+                                    <i class="fas fa-ruler-vertical text-cyan-400 text-2xl mb-2"></i>
+                                    <p class="text-cyan-300 font-semibold">Height</p>
+                                    <p class="text-white text-lg font-bold">145 meters</p>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-green-500/10 to-blue-600/10 p-4 rounded-xl border border-green-500/20">
+                                <div class="text-center">
+                                    <i class="fas fa-bolt text-green-400 text-2xl mb-2"></i>
+                                    <p class="text-green-300 font-semibold">Power Capacity</p>
+                                    <p class="text-white text-lg font-bold">770 MW</p>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-purple-500/10 to-blue-600/10 p-4 rounded-xl border border-purple-500/20">
+                                <div class="text-center">
+                                    <i class="fas fa-water text-purple-400 text-2xl mb-2"></i>
+                                    <p class="text-purple-300 font-semibold">Reservoir</p>
+                                    <p class="text-white text-lg font-bold">615.6 sq km</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dam Information -->
+                <div class="animate-slide-in-right">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-blue-500/20">
+                        <h3 class="text-3xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
+                            श्रीशैलम बांध - Engineering Marvel
+                        </h3>
+                        
+                        <div class="space-y-6 text-gray-300 leading-relaxed">
+                            <div class="bg-gradient-to-r from-blue-500/20 to-cyan-600/20 p-6 rounded-xl border border-blue-500/30">
+                                <h4 class="text-blue-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-info-circle mr-2"></i>
+                                    About Srisailam Dam
+                                </h4>
+                                <p class="text-sm">
+                                    <span class="text-cyan-300 font-semibold">Srisailam Dam</span> is a magnificent hydroelectric project built across the Krishna River in Andhra Pradesh. Completed in 1981, it stands as one of the largest capacity working hydroelectric stations in India. The dam not only generates clean energy but also creates a stunning reservoir that enhances the natural beauty of the sacred Srisailam region.
+                                </p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bg-gradient-to-br from-blue-500/10 to-cyan-600/10 p-4 rounded-xl border border-blue-500/20">
+                                    <h4 class="text-blue-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-calendar-alt mr-2"></i>
+                                        Construction Period
+                                    </h4>
+                                    <p class="text-sm">Construction began in 1960 and was completed in 1981, taking over two decades to build this engineering marvel on the Krishna River.</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 p-4 rounded-xl border border-cyan-500/20">
+                                    <h4 class="text-cyan-400 font-bold mb-2 flex items-center">
+                                        <i class="fas fa-leaf mr-2"></i>
+                                        Environmental Impact
+                                    </h4>
+                                    <p class="text-sm">The dam contributes to clean energy generation while creating a unique ecosystem around the reservoir area.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-600/10 p-6 rounded-xl border border-blue-500/20">
+                                <h4 class="text-white font-bold mb-3 flex items-center">
+                                    <i class="fas fa-cogs mr-2 text-blue-400"></i>
+                                    Technical Specifications & Features
+                                </h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-blue-400"></i> <strong>Type:</strong> Concrete masonry dam with 12 radial gates</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-cyan-400"></i> <strong>Turbines:</strong> 7 units of 110 MW each generating clean electricity</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-green-400"></i> <strong>Water Storage:</strong> Gross storage capacity of 8.72 billion cubic meters</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-purple-400"></i> <strong>Irrigation:</strong> Provides water for agricultural needs in the region</li>
+                                    <li class="flex items-center"><i class="fas fa-dot-circle mr-2 text-yellow-400"></i> <strong>Tourism:</strong> Popular destination for boating and scenic views</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-cyan-500/10 to-blue-600/10 p-6 rounded-xl border border-cyan-500/20">
+                                <h4 class="text-cyan-400 font-bold mb-3 flex items-center">
+                                    <i class="fas fa-camera mr-2"></i>
+                                    Tourist Attractions & Activities
+                                </h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-blue-300 font-semibold mb-1">Boating Experience</p>
+                                        <p class="text-xs">Enjoy scenic boat rides on the vast reservoir</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-cyan-300 font-semibold mb-1">Photography Spot</p>
+                                        <p class="text-xs">Spectacular views perfect for photography</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-green-300 font-semibold mb-1">Sunset Views</p>
+                                        <p class="text-xs">Breathtaking sunsets over the water</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-purple-300 font-semibold mb-1">Temple Connection</p>
+                                        <p class="text-xs">Easy access to nearby Srisailam Temple</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center bg-gradient-to-r from-blue-500/20 to-cyan-600/20 p-4 rounded-xl">
+                                <p class="text-blue-300 font-semibold italic text-lg">
+                                    "Experience the perfect blend of engineering excellence and natural beauty at Srisailam Dam"
+                                </p>
+                                <p class="text-cyan-300 text-sm mt-2">
+                                    Let ReddyCabs take you to witness this magnificent hydroelectric wonder
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taxi Services Section -->
+    <section id="taxi-services" class="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Our Taxi Services</h2>
+                <p class="text-xl text-gray-300">Professional cab services for all your travel needs</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Local Taxi Service -->
+                <div class="text-center group animate-slide-in-left">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-red-500/20 hover:border-red-500/50 transition-all duration-500">
+                        <div class="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-6 rounded-xl mb-6 mx-auto w-fit border border-red-500/30">
+                            <i class="fas fa-car text-red-400 text-4xl group-hover:text-red-300 transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Local Taxi Service</h3>
+                        <p class="text-gray-300 text-sm mb-6">Quick and convenient rides within Hyderabad city. Door-to-door service for shopping, appointments, and daily commute.</p>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Within city limits</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Affordable rates</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> AC & Non-AC options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Outstation Cabs -->
+                <div class="text-center group animate-slide-in-up">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all duration-500">
+                        <div class="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm p-6 rounded-xl mb-6 mx-auto w-fit border border-blue-500/30">
+                            <i class="fas fa-route text-blue-400 text-4xl group-hover:text-blue-300 transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Outstation Cabs</h3>
+                        <p class="text-gray-300 text-sm mb-6">Comfortable long-distance travel to Srisailam, Tirupati, Vijayawada, and other destinations across South India.</p>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Long-distance travel</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Multiple pickup options</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Tourist packages</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Airport Transfers -->
+                <div class="text-center group animate-slide-in-right">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all duration-500">
+                        <div class="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-sm p-6 rounded-xl mb-6 mx-auto w-fit border border-green-500/30">
+                            <i class="fas fa-plane text-green-400 text-4xl group-hover:text-green-300 transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Airport Transfers</h3>
+                        <p class="text-gray-300 text-sm mb-6">Reliable pickup and drop services to Rajiv Gandhi International Airport. Never miss a flight with our punctual service.</p>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Airport pickup/drop</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Flight tracking</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> 24x7 availability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Corporate Bookings -->
+                <div class="text-center group animate-slide-in-left">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all duration-500">
+                        <div class="bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 backdrop-blur-sm p-6 rounded-xl mb-6 mx-auto w-fit border border-yellow-500/30">
+                            <i class="fas fa-briefcase text-yellow-400 text-4xl group-hover:text-yellow-300 transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Corporate Bookings</h3>
+                        <p class="text-gray-300 text-sm mb-6">Professional transportation solutions for businesses. Monthly packages and bulk bookings available.</p>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Business travel</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Monthly packages</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Priority support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wedding & Events -->
+                <div class="text-center group animate-slide-in-up">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/50 transition-all duration-500">
+                        <div class="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm p-6 rounded-xl mb-6 mx-auto w-fit border border-purple-500/30">
+                            <i class="fas fa-calendar-alt text-purple-400 text-4xl group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Wedding & Events</h3>
+                        <p class="text-gray-300 text-sm mb-6">Special occasion transportation for weddings, parties, and events. Luxury cars available for memorable moments.</p>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Wedding transport</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Luxury vehicles</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Event packages</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tourist Packages -->
+                <div class="text-center group animate-slide-in-right">
+                    <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/50 transition-all duration-500">
+                        <div class="bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm p-6 rounded-xl mb-6 mx-auto w-fit border border-orange-500/30">
+                            <i class="fas fa-camera text-orange-400 text-4xl group-hover:text-orange-300 transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Tourist Packages</h3>
+                        <p class="text-gray-300 text-sm mb-6">Explore tourist destinations with our curated packages. Srisailam, Ramoji Film City, and other famous spots.</p>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Sightseeing tours</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Religious packages</li>
+                            <li class="flex items-center justify-center"><i class="fas fa-check-circle text-green-400 mr-2"></i> Customized itineraries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Features -->
+            <div class="mt-16 bg-gray-800/30 backdrop-blur-lg p-8 rounded-2xl border border-red-500/20">
+                <div class="text-center mb-8">
+                    <h4 class="text-3xl font-bold text-white mb-4">🚗 Service Features</h4>
+                    <p class="text-gray-300 text-lg">What makes ReddyCabs your best choice</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gradient-to-br from-red-500/10 to-red-600/10 p-6 rounded-xl border border-red-500/20 text-center">
+                        <div class="bg-gradient-to-br from-red-500 to-red-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg shadow-red-500/50">
+                            <i class="fas fa-user-tie text-white text-lg"></i>
+                        </div>
+                        <h5 class="text-white font-bold mb-2">Professional Drivers</h5>
+                        <p class="text-gray-400 text-sm">Experienced, licensed, and courteous drivers</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-500/10 to-blue-600/10 p-6 rounded-xl border border-blue-500/20 text-center">
+                        <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg shadow-blue-500/50">
+                            <i class="fas fa-gps text-white text-lg"></i>
+                        </div>
+                        <h5 class="text-white font-bold mb-2">GPS Tracking</h5>
+                        <p class="text-gray-400 text-sm">Real-time location tracking for safety</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-green-500/10 to-green-600/10 p-6 rounded-xl border border-green-500/20 text-center">
+                        <div class="bg-gradient-to-br from-green-500 to-green-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg shadow-green-500/50">
+                            <i class="fas fa-credit-card text-white text-lg"></i>
+                        </div>
+                        <h5 class="text-white font-bold mb-2">Multiple Payments</h5>
+                        <p class="text-gray-400 text-sm">Cash, UPI, Card - all payment options</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-500/10 to-purple-600/10 p-6 rounded-xl border border-purple-500/20 text-center">
+                        <div class="bg-gradient-to-br from-purple-500 to-purple-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg shadow-purple-500/50">
+                            <i class="fas fa-headset text-white text-lg"></i>
+                        </div>
+                        <h5 class="text-white font-bold mb-2">24x7 Support</h5>
+                        <p class="text-gray-400 text-sm">Round-the-clock customer assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Why Choose ReddyCabs?</h2>
+                <p class="text-xl text-gray-300">Experience the difference with our professional service</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group animate-slide-in-left">
+                    <div class="bg-gradient-to-br from-red-500 to-red-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-red-500/50">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">24x7 Service</h3>
+                    <p class="text-gray-300 leading-relaxed">Round-the-clock availability for all your taxi needs</p>
+                </div>
+
+                <div class="text-center group animate-slide-in-up">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Safe & Secure</h3>
+                    <p class="text-gray-300 leading-relaxed">Verified drivers and GPS tracking for your safety</p>
+                </div>
+
+                <div class="text-center group animate-slide-in-up delay-200">
+                    <div class="bg-gradient-to-br from-green-500 to-green-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-green-500/50">
+                        <i class="fas fa-rupee-sign text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Best Rates</h3>
+                    <p class="text-gray-300 leading-relaxed">Competitive pricing with no hidden charges</p>
+                </div>
+
+                <div class="text-center group animate-slide-in-right">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50">
+                        <i class="fas fa-user-tie text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Professional Drivers</h3>
+                    <p class="text-gray-300 leading-relaxed">Experienced and courteous drivers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900 text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-5">
+                <div class="grid-pattern"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-6">Get In Touch</h2>
+                <p class="text-xl text-gray-300">Ready to book your ride? Contact us now!</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Contact Info -->
+                <div class="animate-slide-in-left">
+                    <div class="space-y-8">
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-red-500 to-red-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-red-500/50">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Phone</h3>
+                                <p class="text-gray-300 text-lg">+91 8106583449</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/50">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Email</h3>
+                                <p class="text-gray-300 text-lg">reddycabssarvice@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-green-500 to-green-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-green-500/50">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Service Area</h3>
+                                <p class="text-gray-300 text-lg">Hyderabad and surrounding areas</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 group">
+                            <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/50">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">WhatsApp</h3>
+                                <p class="text-gray-300 text-lg">+91 8106583449</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="bg-gray-800/50 backdrop-blur-lg p-10 rounded-2xl border border-red-500/20 animate-slide-in-right">
+                    <h3 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Book Your Ride Now</h3>
+                    <div class="space-y-6">
+                        <a href="tel:+918106583449" class="block w-full bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-4 rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-500 text-lg font-semibold">
+                            <i class="fas fa-phone mr-3"></i>
+                            Call +91 8106583449
+                        </a>
+                        <a href="https://wa.me/918106583449" class="block w-full bg-gradient-to-r from-green-600 to-green-700 text-white text-center py-4 rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-500 text-lg font-semibold">
+                            <i class="fab fa-whatsapp mr-3"></i>
+                            WhatsApp Us
+                        </a>
+                        <a href="mailto:reddycabssarvice@gmail.com" class="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-500 text-lg font-semibold">
+                            <i class="fas fa-envelope mr-3"></i>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black text-white py-16 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="animate-fade-in-up">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-gradient-to-br from-red-500 to-red-700 p-3 rounded-xl shadow-lg shadow-red-500/50">
+                            <i class="fas fa-car text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">ReddyCabs</h3>
+                            <p class="text-sm text-gray-400">Professional Taxi Service</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Your trusted partner for safe, reliable, and comfortable taxi services in Hyderabad.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate-fade-in-up delay-100">
+                    <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm"></i>
+                            Home
+                        </a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm"></i>
+                            Services
+                        </a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm"></i>
+                            About
+                        </a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right text-red-500 mr-2 text-sm"></i>
+                            Contact
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="animate-fade-in-up delay-200">
+                    <h4 class="text-xl font-bold mb-6 text-white">Our Services</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-car text-red-500 mr-3"></i>
+                            Local Taxi Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-route text-blue-500 mr-3"></i>
+                            Outstation Cabs
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-green-500 mr-3"></i>
+                            24x7 Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-briefcase text-yellow-500 mr-3"></i>
+                            Corporate Bookings
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-city text-purple-500 mr-3"></i>
+                            City Tours
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="animate-fade-in-up delay-300">
+                    <h4 class="text-xl font-bold mb-6 text-white">Contact Info</h4>
+                    <div class="space-y-4 text-gray-400">
+                        <div class="flex items-center space-x-3 group">
+                            <div class="bg-gradient-to-br from-red-500 to-red-700 p-2 rounded-lg shadow-lg shadow-red-500/50 group-hover:shadow-red-500/80 transition-all duration-300">
+                                <i class="fas fa-phone text-white text-sm"></i>
+                            </div>
+                            <span class="group-hover:text-red-400 transition-colors duration-300">+91 8106583449</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-700 p-2 rounded-lg shadow-lg shadow-blue-500/50 group-hover:shadow-blue-500/80 transition-all duration-300">
+                                <i class="fas fa-envelope text-white text-sm"></i>
+                            </div>
+                            <span class="group-hover:text-blue-400 transition-colors duration-300">reddycabssarvice@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="bg-gradient-to-br from-green-500 to-green-700 p-2 rounded-lg shadow-lg shadow-green-500/50 group-hover:shadow-green-500/80 transition-all duration-300">
+                                <i class="fas fa-map-marker-alt text-white text-sm"></i>
+                            </div>
+                            <span class="group-hover:text-green-400 transition-colors duration-300">Hyderabad, Telangana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p class="text-lg">&copy; 2025 <span class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent font-bold">ReddyCabs</span>. All rights reserved. | Professional Taxi Services in Hyderabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <!-- Call Button (Left Side) -->
+    <a href="tel:+918106583449" class="fixed left-4 bottom-24 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-50 animate-bounce">
+        <i class="fas fa-phone text-xl"></i>
+    </a>
+
+    <!-- WhatsApp Button (Right Side) -->
+    <a href="https://wa.me/918106583449" target="_blank" class="fixed right-4 bottom-24 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-50 animate-bounce">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
+
+    <script src="reddycabs.js"></script>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+
+    <style>
+        /* Dark theme styles (default) */
+        body {
+            background: linear-gradient(to bottom, #111827, #1f2937);
+            color: #ffffff;
+        }
+
+        /* Smooth transitions */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+    </style>
+</body>
+</html>
